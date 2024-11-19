@@ -70,7 +70,13 @@ Metrics/MethodLength:
 Metrics/ParameterLists:
   Max: 6
 
+Minitest/AssertTruthy:
+  Enabled: false
+
 Minitest/EmptyLineBeforeAssertionMethods:
+  Enabled: false
+
+Minitest/RefuteFalse:
   Enabled: false
 
 Naming/MemoizedInstanceVariableName:
