@@ -76,6 +76,9 @@ Minitest/AssertTruthy:
 Minitest/EmptyLineBeforeAssertionMethods:
   Enabled: false
 
+Minitest/MultipleAssertions:
+  Max: 5
+
 Minitest/RefuteFalse:
   Enabled: false
 
