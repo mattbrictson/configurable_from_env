@@ -13,6 +13,10 @@ AllCops:
     - "tmp/**/*"
     - "vendor/**/*"
 
+Bundler/OrderedGems:
+  Exclude:
+    - "gemfiles/*"
+
 Layout/FirstArrayElementIndentation:
   EnforcedStyle: consistent
 
