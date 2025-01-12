@@ -1,15 +1,15 @@
 require "active_support"
 require "active_support/concern"
-require "active_support/configurable"
 require "active_support/core_ext/enumerable"
 require "active_support/core_ext/hash/keys"
 
 module ConfigurableFromEnv
+  autoload :Configurable, "configurable_from_env/configurable"
   autoload :EnvironmentValue, "configurable_from_env/environment_value"
   autoload :VERSION, "configurable_from_env/version"
 
   extend ActiveSupport::Concern
-  include ActiveSupport::Configurable
+  include Configurable
 
   module ClassMethods
     def config_accessor(*attributes, from_env: nil, **options, &block)
