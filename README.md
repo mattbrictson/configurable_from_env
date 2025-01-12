@@ -5,7 +5,7 @@
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/mattbrictson/configurable_from_env/ci.yml)](https://github.com/mattbrictson/configurable_from_env/actions/workflows/ci.yml)
 [![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/mattbrictson/configurable_from_env)](https://codeclimate.com/github/mattbrictson/configurable_from_env)
 
-The `configurable_from_env` gem allows you to define accessors that automatically populate via environment variables. It brings back Active Support's [`config_accessor`](https://github.com/rails/rails/blob/819a94934966eafb6bee6990b18372e1eb91159d/activesupport/lib/active_support/configurable.rb#L111) – which was [removed](https://github.com/rails/rails/pull/53970) in Rails 8.1 – and enhances it with a new `:from_env` option.
+The `configurable_from_env` gem allows you to define accessors that automatically populate via environment variables. It brings back Active Support's [`config_accessor`](https://github.com/rails/rails/blob/819a94934966eafb6bee6990b18372e1eb91159d/activesupport/lib/active_support/configurable.rb#L111) – which was [deprecated](https://github.com/rails/rails/pull/53970) in Rails 8.1 – and enhances it with a new `:from_env` option.
 
 > [!NOTE]
 > This project is experimental. Please open an issue or send me an email and let me know what you think!
