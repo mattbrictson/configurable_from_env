@@ -12,13 +12,13 @@ module ConfigurableFromEnv
   include Configurable
 
   module ClassMethods
-    def config_accessor(*attributes, from_env: nil, **options, &block)
+    def config_accessor(*attributes, from_env: nil, **options, &)
       if from_env && attributes.many?
         raise ArgumentError, "Only one accessor at a time can be created using the :from_env option"
       end
 
       env_value = EnvironmentValue.from(from_env)
-      accessor = super(*attributes, **options, &block)
+      accessor = super(*attributes, **options, &)
       default_provided = options.key?(:default) || block_given?
 
       env_value&.read(required: !default_provided) do |value|
