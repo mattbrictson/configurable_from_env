@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.summary = "Define accessors that are automatically populated via ENV"
   spec.homepage = "https://github.com/mattbrictson/configurable_from_env"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 3.1"
+  spec.required_ruby_version = ">= 3.2"
 
   spec.metadata = {
     "bug_tracker_uri" => "https://github.com/mattbrictson/configurable_from_env/issues",
